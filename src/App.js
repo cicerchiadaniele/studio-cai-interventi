@@ -17,9 +17,9 @@ import {
 //  - il contatto del condomino in loco è facoltativo e finisce nel messaggio,
 //    così arriva al tecnico senza toccare lo scenario Make.
 // ─────────────────────────────────────────────────────────────
-const APP_VERSION = "2.2";
+const APP_VERSION = "2.3";
 const APP_TAG = `Interventi studio ${APP_VERSION}`; // come arriva a Make
-const BUILD_DATE_LABEL = "23/09/2026";
+const BUILD_DATE_LABEL = "02/10/2026";
 
 const WEBHOOK_DEFAULT = "https://hook.eu1.make.com/xvuih8pqxk96q9v6bjpls6u8e4k4f5qv";
 const STUDIO = { nome: "Studio CAI", email: "info@studiocai.it", telefono: "0678359769" };
@@ -110,8 +110,9 @@ const TIPI_INTERVENTO = [
   { value: "Pulizia", label: "Pulizia", ambito: "Pulizia delle parti comuni", icon: Scopa },
   { value: "Videosorveglianza", label: "Videosorveglianza", ambito: "Impianto di videosorveglianza", icon: Cctv },
 ];
-// Foto e documenti solo per questi tipi di intervento
-const TIPI_CON_ALLEGATI = ["Edilizia", "Idraulico"];
+// Foto e documenti per tutti i tipi di intervento (v2.3: prima solo Edilizia e Idraulico).
+// Make li allega alla mail di qualunque fornitore, o li mette nella cartella Dropbox se la ditta e' Li.Ca.
+const TIPI_CON_ALLEGATI = TIPI_INTERVENTO.map((t) => t.value);
 
 // ─────────────────────────────────────────────────────────────
 // Helpers

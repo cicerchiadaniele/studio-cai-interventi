@@ -102,9 +102,10 @@ modifica interventi.
 
 ## Allegati
 
-Foto e documenti si possono aggiungere solo per Edilizia e Idraulico
-(le tipologie che lo scenario Make instrada a Li.Ca., con cartella Dropbox).
-Per gli altri tipi il riquadro non compare e non viene inviato nulla.
+Foto e documenti (fino a 5 file, PDF o immagini) si possono aggiungere con
+qualunque tipo di intervento (dalla v2.3). Lo scenario Make li allega alla mail
+del fornitore, o alla mail allo studio quando nessuna ditta riceve la richiesta;
+se la ditta è Li.Ca. finiscono nella cartella Dropbox dell'intervento.
 
 ## Elenco condomini
 
