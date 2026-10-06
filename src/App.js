@@ -4,7 +4,7 @@ import {
   Send, CheckCircle2, AlertCircle, Building2, Mail, Phone, Loader2,
   Paperclip, X, User, MapPin, Home, Wrench, FileText, UserCheck, RotateCcw, Eye,
   ChevronDown, Search, Check, Shield, Antenna, ArrowUpDown, Fence, Bug, BrickWall,
-  Zap, KeyRound, Trees, Droplets, Flame, Accessibility, Clock, ClipboardList, History, Gauge, Cctv
+  Zap, KeyRound, Trees, Droplets, Flame, Accessibility, Clock, ClipboardList, History, Gauge, Cctv, FireExtinguisher
 } from "lucide-react";
 
 // ─────────────────────────────────────────────────────────────
@@ -17,7 +17,7 @@ import {
 //  - il contatto del condomino in loco è facoltativo e finisce nel messaggio,
 //    così arriva al tecnico senza toccare lo scenario Make.
 // ─────────────────────────────────────────────────────────────
-const APP_VERSION = "2.3";
+const APP_VERSION = "2.4";
 const APP_TAG = `Interventi studio ${APP_VERSION}`; // come arriva a Make
 const BUILD_DATE_LABEL = "02/10/2026";
 
@@ -99,6 +99,7 @@ const TIPI_INTERVENTO = [
   { value: "Disinfestazioni/Derattizzazioni", label: "Disinfestazioni", ambito: "Disinfestazione e derattizzazione", icon: Bug },
   { value: "Edilizia", label: "Edilizia", ambito: "Opere edili", icon: BrickWall },
   { value: "Elettricista", label: "Elettricista", ambito: "Impianto elettrico", icon: Zap },
+  { value: "Estintori", label: "Estintori", ambito: "Presidi antincendio (estintori e idranti)", icon: FireExtinguisher },
   { value: "Fabbro", label: "Fabbro", ambito: "Serramenti e opere in ferro", icon: KeyRound },
   { value: "Fognature", label: "Fognature", ambito: "Fognature e spurghi", icon: Tombino },
   { value: "Giardinaggio", label: "Giardinaggio", ambito: "Verde condominiale", icon: Trees },
